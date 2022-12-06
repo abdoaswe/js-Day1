@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+ 
+        <label for="Name">Full name</label>
+        <input type="text" name="put" value="" placeholder="enter name" id="name" onblur="vliadtion()" onfocus="focasuser()"  required>
+        <small id="err" style="color: red; display: none;">Invaild Name</small>
+        <br>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email"  id="email" required>
+          <br>
+          <label for="city"><b>City</b></label>
+          <select name="put" >
+            <option value="Aswan">Aswan</option>
+            <option value="luxor">luxor</option>
+            <option value="cairo">cairo</option>
+            <option value="Alex">Alex</option>
+         </select>
+         <br>
+          <label for="psw"><b>Password</b></label>
+          <input   type="password" placeholder="Enter Password" onblur="confirm()" id="psw" required>
+          <br>
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input   type="password" placeholder="Repeat Password" onblur="confirm()" id="psw-repeat" required>
+          <hr>
+          <br>
+          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        </div>
+      
+        <div class="container signin">
+          <p>Already have an account? <a href="#" >Sign in</a>.</p>
+        </form>
+        <button type="submit" onclick="data()" >Register</button>
+
+</body>
+<script src="./js/day4task1.js"></script>
+</html>
